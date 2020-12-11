@@ -1,0 +1,125 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+#info-derechos-familia{
+  padding-top: 100px;
+}
+#info-derechos-familia h1{
+  text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#info-derechos-familia p{
+  text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+.card{
+  border-style: none;
+}
+#tituloac{
+    font-family: 'Bree Serif', serif;
+    text-decoration: none;
+    color: #000;
+}
+.card-header:active{
+  background-color: #F9BE05;
+
+}
+.card-header:hover{
+  background-color: #F9BE05;
+}
+.card-header img{
+  padding-right: 20px;
+}
+#card2{
+  padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+#bodycollapse{
+  font-family: 'Titillium Web', sans-serif;
+}
+
+/* mobile first */
+#banner{
+  display: none;
+
+}
+#foot{
+  background-color: inherit;
+
+}
+#foot h6{
+  color: Black;
+}
+#foot p{
+  color: Black;
+}
+#info-footer{
+    color: Black;
+}
+#Copyright{
+  background-color: #000;
+  padding: 50px;
+}
+#Copyright p{
+  color: #fff;
+}
+#links a{
+  text-decoration: none;
+  color: #000;
+}
+#links a:hover, a:active{
+  color: #F9BE05;
+}
+/* --------------------------------banner design----------------------------------------- */
+@media (min-width: 750px){
+  #banner{
+    display:block;
+}
+#foot{
+  background-color: #000;
+padding-top: 50px;
+margin-top: 50px;
+}
+#foot h6{
+  color: #fff;
+}
+#foot p{
+    color: #fff;
+}
+#info-footer{
+    color: #fff;
+}
+#links a{
+    color: #fff;
+}
+#titulo1{
+  background-color: Black;
+  color: #fff;
+  font-family: 'Bree Serif', serif;
+  padding: 30px;
+
+}
+#titulo1:hover{
+  background-color: #F9BE05;
+}
+
+.card-body-banner{
+  background-color: #f2f2f2;
+  padding: 50px;
+  margin-top: 0;
+
+}
+.card-body-banner a{
+  text-decoration: none;
+color: Black;
+}
+.card-body-banner a:hover, .card-body-banner a:active{
+  color: #F9BE05;
+  cursor: pointer;
+}
+}

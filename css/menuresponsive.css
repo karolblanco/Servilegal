@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.imagenmenu{
+float: left;
+font-size: 20px;
+
+}
+header{
+  /* background: #F9BE05; */
+  height: 60px;
+  color: #fff;
+  /* las letras flotan */
+  display: flex;
+  /* Alinea los items desde el final */
+  justify-content: space-between;
+  align-items: center;
+}
+
+#btn-menu{
+  /* quita valores por defecto. Al hacer un click sirve para ocultar o mostrar el contenido */
+  display: none;
+}
+
+header label{
+  font-size: 30px;
+  /* cursor pointer hace que al pasar el mouse por el contenido, este se convierta en una mano */
+  cursor: pointer;
+  display: none;
+}
+.menu ul{
+   /* background:#F9BE05; */
+  display: flex;
+  /* quita valores por defecto. En este caso a las etiquetas li */
+  list-style: none;
+}
+
+.menu ul ul{
+  display:none;
+
+}
+.menu a{
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+
+}
+.imagenmenu{
+margin-top: -10px;
+margin-right: 6px;
+}
+/* .menu a:hover {
+  background: rgba(0, 0, 0, 0.3);
+    font-family: 'Bree Serif', serif;
+} */
+
+.menu a span{
+  /* recordar que en el span es donde estan los iconos para el despliegue del submenu con esto solo le doy una separacion */
+  margin-left: 10px;
+
+}
+/* cuando pase el mouse en un li que este dentro de un ul vere los ul dentro de ese li */
+.menu ul li:hover ul{
+  display: block;
+  position: absolute;
+
+}
+
+
+
+/* permite el responsive design */
+/* este maximo tamaño es el de una tablet. esto para que a partir de dicho tamaño cambie el menu */
+@media (max-width:1050px) {
+/* para que aparezca el icono del menu que anteriormente desaparecimos */
+  header label{
+    display: block;
+  }
+
+  .menu{
+position: absolute;
+top: 50px;
+left: 0px;
+width: 100%;
+/* transform para que no aparezca en la pantalla */
+transform: translateX(100%);
+/* efecto para cuando aparezca y desaparezca el menu */
+transition: all 0.3s;
+}
+  .menu ul {
+    display: block;
+
+  }
+  /* recordar que debo "actualizar los valores que di antes cuando la pantalla era mas grande. Para el diseño responsive quiero que los ul del submenu bajen los demas items para que se vea bien" */
+  .menu ul li:hover ul{
+    display: none;
+    position: static;
+  }
+  .menu a span{
+    position: absolute;
+    right: 5px;
+
+  }
+  #btn-menu:checked ~ .menu{
+    transform: translateX(0%);
+  }
+  .menu ul ul {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .menu ul ul a{
+    padding: 15px 40px;
+  }
+}

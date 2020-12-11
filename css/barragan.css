@@ -1,0 +1,485 @@
+/* ------------------ESTILOS INICIALES DEL MENU----------------------- */
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5{
+    font-family: 'Bree Serif', serif;
+}
+p{
+    font-family: 'Titillium Web', sans-serif;
+}
+header{
+  background:Black;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+ top: 0;
+ left: 0;
+ z-index: 1000;
+ float: left;
+ font-size: 20px;
+}
+.menu ul{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.menu ul li:hover a{
+  color: #F9BE05;
+  font-family: 'Bree Serif', serif;
+}
+@media (max-width:1000px){
+  .menu ul  a{
+padding: 20px 40px;
+
+  }
+  .carousel-inner p{
+    padding-top: 0;
+  }
+.carousel-inner h1{
+    padding-top: 0;
+  }
+
+
+}
+@media (max-width:570px){
+  .menu ul a{
+    padding: 5px 40px;
+  }
+  .carousel-inner p{
+    padding-top: 0;
+  }
+  .carousel-inner h1{
+    padding-top: 0;
+  }
+}
+
+#slide img{
+  object-fit: cover;
+}
+/* ---------------------PRESENTACION DE LA FIRMA------------------------------------- */
+#bienvenidos_barragan img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  /* margin-top: -30px; */
+}
+#bienvenidos_barragan h1{
+  color: #F9BE05;
+
+text-align: left;
+padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  font-size:  60px;
+}
+
+#bienvenidos_barragan p{
+
+  font-size: 20px;
+  margin-top: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+
+}
+
+ #boton_personalizadob{
+   background-color: #F9BE05;
+   border-color: WHITE;
+margin-left: 40%;
+margin-top: 20px;
+
+ }
+/* -------------------------ESTILOS practice_area--------------------------- */
+
+@media (max-width: 1100px) {
+
+.carousel-inner p{
+  padding-top: 0;
+}
+.carousel-inner h1{
+  padding-top: 0;
+}
+}
+
+#practice_area p{
+  font-size: 25px;
+  color: WHITE;
+}
+#practice_area h1{
+  justify-content: center;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+
+}
+#practice_area h3{
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 40px;
+  padding-bottom: 30px;
+  background: rgba(0, 0, 0, 0.1);
+
+}
+#practice_area a{
+color: #000;
+text-decoration: none;
+
+}
+/* #practice_area img{
+text-align: center;
+padding-left: 10px;
+
+} */
+#practice_area h3:hover{
+  background: #F9BE05;
+  cursor: pointer;
+}
+
+.align{
+padding-left: 150px;
+}
+.align1{
+  padding-left: 245px;
+}
+.align2{
+  padding-left: 75px;
+}
+.align3{
+  padding-left: 170px;
+}
+.align4{
+  padding-left: 190px;
+}
+.align5{
+  padding-left: 150px;
+}
+@media (max-width: 1190px) {
+.align, .align1, .align2, .align3, .align4, .align5{
+  padding-left: 0;
+}
+}
+
+/* ------------------------------------ESTILOS DE TARJETA PARA PRESENTACION DE ABOGADOS-------------------------------- */
+#lawyer{
+  margin-top: 50px;
+}
+#lawyer h1{
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+  margin-bottom: 20px;
+}
+#lawyer h5{
+  text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+#lawyer img{
+  object-fit: cover;
+  height: 50%;
+}
+#lawyer p{
+  height: 100%;
+}
+/* -------------------------------ESTILOS DEL RESTO DE EQUIPO DE LA FIRMA ------------------.----------- */
+
+.equipob img{
+width: 100%;
+}
+
+.equipob{
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+}
+.equipob h1{
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+  margin-bottom: 20px;
+  margin-top: 50px;
+
+}
+
+.equipob-container{
+  display: flex;
+  justify-content: space-between;
+
+}
+.equipob-item{
+  width: 30%;
+  position: relative;
+    overflow: hidden;
+}
+.equipob-text{
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  transform: translateY(100%);
+transition: all 0.5s ease-out;
+}
+.equipob-text p{
+text-align: center;
+
+}
+.equipob-text h2{
+  margin-top: 0;
+
+}
+.equipob-item:hover .equipob-text, .equipob-item:active .equipob-text{
+  transform: translateY(15%);
+
+}
+
+
+@media (min-width:610px) and (max-width: 910px) {
+.equipob-container{
+  display: block;
+  width: 100%;
+}
+.equipob-item{
+  padding: 30px;
+  margin: 30px;
+  width: 80%;
+  position: relative;
+}
+.equipob-text{
+  position: absolute;
+  padding: 30px;
+  bottom: 0px;
+  transform: translateY(100%);
+
+}
+.equipob-item:hover .equipob-text, .equipob-item:active .equipob-text{
+  transform: translateY(-50%);
+width: 80%;
+
+}
+}
+@media (max-width:605px) {
+  .equipob-container{
+    display: block;
+    width: 100%;
+  }
+  .equipob-item{
+  margin: 20px;
+    width: 80%;
+    position: relative;
+  }
+}
+/* ----------------------------------------ESTILOS SECTION SLIDE CLIENTES----------------------------------------------- */
+
+.carousel {
+  width: 100%;
+  margin-top: 100px;
+/* background-color: #F9BE05; */
+}
+.carousel-inner{
+  width: 100%;
+  max-width: 1400px;
+
+  margin: auto;
+   /* background-color: #F9BE05; */
+   background-image: url(../img/gavel.jpg);
+   background-repeat: no-repeat;
+   object-fit: cover;
+   background-size: cover;
+   height: 400px;
+}
+.carousel-user img{
+ /* padding-top: 50px; */
+  width: 140px;
+  margin: auto;
+   /* background-color: #fff; */
+}
+.carousel-inner h3{
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+.carousel-inner p{
+  padding-top: 8px;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+
+}
+.carousel-inner h1{
+   padding-top: 45px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Bree Serif', serif;
+  padding-bottom: 0;
+}
+
+/* -----------------------Section CONTACT ------------------------------ */
+#contact_b h1{
+  text-align: center;
+  justify-content: center;
+  margin: 30px;
+}
+/* .contactb{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contactb img{
+   padding: 30px;
+   transform: translateX(85%);
+ border: 2px solid #0062ff;
+
+
+}
+.contactb img:hover{
+  background-color: #F9BE05;
+  transition: all 0.5s;
+
+}
+.contactb h5{
+color: #0062ff;
+} */
+.card-body h5{
+  color: #0062ff;
+}
+#contact_b img{
+   border: 2px solid #0062ff;
+   padding: 10px;
+}
+.contactbb img:hover{
+  background-color: #F9BE05;
+  /* transition: all 0.5s; */
+
+}
+/* .formulario{
+  display: flex;
+
+
+} */
+.containerb{
+  margin: 10px;
+  padding: 10px;
+
+}
+
+.containerb input{
+  margin-top: 20px;
+  height: 50px;
+margin-right:0px;
+padding-right: 0;
+width: 300px;
+background-color:#ede6df;
+}
+ textarea{
+background-color:#ede6df;
+width:100%;
+height:200px;
+
+
+}
+input:hover{
+  border: 2px solid #0062ff;
+}
+textarea:hover{
+    border: 2px solid #0062ff;
+
+}
+#botoncontact{
+  background-color:#0062ff;
+  color: #fff;
+  transform: translateY(-110%);
+  margin-top: 50px;
+  width: auto;
+
+}
+#botoncontact:hover{
+  background-color: #F9BE05;
+
+}
+/* ---------------------SECTION CONTACT RESPONSIVE---------------------------------- */
+
+@media (min-width: 1180px) {
+   .formulario{
+    display: flex;
+
+  }
+  .contactbb{
+    display: flex;
+  }
+  textarea{
+    width: 500px;
+  }
+  #botoncontact{
+    transform: translateY(-180%);
+     width: 600px;
+
+
+  }
+  .card-body h5, p{
+    margin-left:  30px;
+    margin-top: auto;
+
+  }
+  #contact_b img{
+    padding: 20px;
+  }
+  /* .card-text2{
+    margin-left: -100px;
+  } */
+}
+@media (min-width: 780px) and (max-width: 1170px) {
+  .card-text1{
+    padding: 0;
+    margin: 0;
+    align-items: flex-start;
+  text-align: justify;
+  }
+ #botoncontact{
+  justify-content: center;
+transform: translateX(280%);
+   width: 50%;
+ }
+}
+/* --------------------------------SECTION FOOTER---------------------------------- */
+@media (min-width:770px){
+  footer{
+    transform: translateY(20%);
+  }
+}
+footer{
+  background-color: #000;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 100%;
+}
+footer h6, #info-footer{
+  font-family: 'Bree Serif', serif;
+  color: #fff;
+}
+
+footer p{
+  margin: auto;
+    color: #fff;
+  font-family: 'Titillium Web', sans-serif;
+
+}
+footer p:hover{
+  color: #F9BE05;
+}
+footer h6:hover{
+    color: #0062ff;
+}
+#info-footer:hover{
+  color: #0062ff;
+}
+#info-footer{
+  margin: auto;
+  transform: translateY(15%);
+}
